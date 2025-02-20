@@ -33,5 +33,5 @@ for_each -nthreads 6 xcpd_list/* : docker run -ti --rm \
 	--resource-monitor \
 	--stop-on-first-crash 
 
-rm xcpd_list
+rm -r xcpd_list
 
