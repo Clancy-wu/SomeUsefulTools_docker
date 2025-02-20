@@ -11,7 +11,7 @@ for_each -nthreads 6 xcpd_list/* : docker run -ti --rm \
     -u $(id -u):$(id -g) \
     -v /home/clancy/TemplateFlow:/opt/templateflow \
     -e TEMPLATEFLOW_HOME=/opt/templateflow \
-	pennlinc/xcp_d:latest \
+	pennlinc/xcp_d:0.10.0 \
 	/work/fmriprep/ /work/xcpd/ participant --participant-label PRE \
 	--mode linc \
 	--nthreads 1 --omp-nthreads 2 --mem-gb 10 \
