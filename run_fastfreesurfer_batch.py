@@ -20,6 +20,7 @@ free_dir = f'{fast_dir}/freesurfer'
 os.makedirs(free_dir, exist_ok=True)
 
 all_subs = [x for x in os.listdir('BIDS') if 'sub-' in x]
+copy('license.txt', f'{fast_dir}/license.txt')
 
 i = 1
 for sub_name in all_subs:
