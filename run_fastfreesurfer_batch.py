@@ -3,6 +3,9 @@ from glob import glob
 from shutil import copy
 from nilearn import image
 
+# (1) change -v /PATH:/data 
+# (2) copy license.txt to this dir
+
 def run_fastfreesurfer_command(sub_name):
 	my_command = f"docker run --gpus all -v /home/clancy/ssd/SCH/fastfreesurfer:/data \
 						--rm --user $(id -u):$(id -g) deepmi/fastsurfer:latest \
